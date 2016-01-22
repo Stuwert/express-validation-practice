@@ -5,6 +5,8 @@ block content
   div.container
     form(action='/' method='post')
       h1 Sign Up
+      if incomplete
+        p= incomplete.name
       div.form-group
         label(for="author") Name
         input.form-control(type="text" id="name" name='name' placeholder="Your Name")
